@@ -223,7 +223,11 @@ export default function Index(props) {
           Authorization: `Bearer ${token}`,
         },
       });
-      let data = response.data.families.sort((a, b) => a.ranking - b.ranking);
+      let data = response.data.families.filter((item) => {
+        let famName = item.name.toUpperCase();
+        return famName !== "PRESCRIPTEUR";
+      });
+
       let newData = data.filter((dat) => dat.email !== USER.email);
       setFamilyOptions(newData);
     } catch (error) {
