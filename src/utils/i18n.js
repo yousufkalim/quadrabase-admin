@@ -331,6 +331,7 @@ i18n
             "Chap0Level3 deleted successfully",
           "Subscription is required": "Subscription is required",
           "Text is required.": "Text is required.",
+          "Family already in use": "Family already in use",
         },
       },
       fr: {
@@ -652,6 +653,7 @@ i18n
             "Chap0Level3 supprimé avec succès",
           "Subscription is required": "L'abonnement est requis",
           "Text is required.": "Le texte est requis.",
+          "Family already in use": "Famille déjà utilisée",
         },
       },
     },
